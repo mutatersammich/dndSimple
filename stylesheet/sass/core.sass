@@ -1,0 +1,94 @@
+html,body
+  user-select: none
+  overflow-y: hidden
+.scrollable
+  overflow-y: auto
+  overflow-x: hidden
+.full-view
+  height: 100vh
+  width: 100vw
+.selection-back
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 700px)
+    flex-direction: column
+
+  .selection
+    width: 33%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    position: relative
+    @media screen and (max-width: 700px)
+      width: 100%
+      height: 33%
+  .bio
+    background:
+      image: url('imgs/yellow.png')
+      size: cover
+      position: center top
+    transition: all 800ms ease-in-out
+    &:hover
+      width: 800000%
+      @media screen and (max-width: 700px)
+        width: 100%
+        height: 900%
+  .spells
+    background:
+      image: url('imgs/blue.png')
+      size: cover
+      position: center top
+    transition: all 800ms ease-in-out
+    &:hover
+      width: 1000%
+      @media screen and (max-width: 700px)
+        width: 100%
+        height: 900%
+
+  .stats
+    background:
+      image: url('imgs/red.png')
+      size: cover
+      position: center top
+    transition: all 800ms ease-in-out
+    &:hover
+      width: 1000%
+      @media screen and (max-width: 700px)
+        width: 100%
+        height: 900%
+.content-box
+  width: 95%
+  height: 90%
+  color: transparent
+  background-color: transparent
+  transition: all 2s ease-in-out
+    delay: 1s
+  hr
+    display: none
+  h1
+    text-align: center
+
+  &:hover
+    background-color: rgba(0,0,0,0.8)
+    color: white
+.content
+  h1
+    font-size: 3em
+    margin: 30px 0px
+  p
+    font-size: 2em
+.c-stats
+  h1
+    margin: 10px 0px
+  text-align: center
+
+.c-spell
+
+  h1
+
+  p
+    text-align: center
+.proficiency
+  margin: 0px 0px
